@@ -1,5 +1,4 @@
 absl-py==1.4.0
--e git+https://github.com/aim-uofa/AdelaiDet.git@36721221eb572256206e60df6e9095ed00b2e08c#egg=AdelaiDet
 altgraph==0.17.2
 antlr4-python3-runtime==4.9.3
 astunparse==1.6.3
@@ -129,8 +128,6 @@ termcolor==2.3.0
 tifffile==2024.2.12
 timm==0.9.16
 tomli==2.0.1
-torchaudio==2.2.1+cu118
-torchvision==0.17.1+cu118
 tqdm==4.66.1
 typing_extensions==4.8.0
 tzdata==2023.3
