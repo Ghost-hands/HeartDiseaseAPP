@@ -7,14 +7,14 @@ import pickle
 
 
 app = Flask(__name__)
-app.secret_key = "staysafebrother"
+app.secret_key = "yoursecretkey"
 mail_settings = {
     "MAIL_SERVER": 'smtp.office365.com',
     "MAIL_PORT": 587,
     "MAIL_USE_TLS": True,
     "MAIL_USE_SSL": False,
-    "MAIL_USERNAME": "ahmedisamin1433@outlook.com",
-    "MAIL_PASSWORD": "Fishfish2"
+    "MAIL_USERNAME": "youremail@outlook.com",
+    "MAIL_PASSWORD": "yourpass"
 }
 app.config.update(mail_settings)
 mail = Mail(app)
@@ -73,7 +73,7 @@ def signup():
 			pw = pw + text[randrange(len(text))]
 		print(pw)
 		msg = Message(subject="Welcome to HeartDiseasePrediction",
-					  sender= "ahmedisamin1433@outlook.com",
+					  sender= "youremail@outlook.com",
 					  recipients=[em])
 		msg.body = "Greetings from HeartDiseasePredictor! Your password is " + str(pw)
 		mail.send(msg)
@@ -136,7 +136,7 @@ def forgot():
 				for i in range(6):
 					pw1 = pw1 + text[randrange(len(text))]
 				print(pw1)
-				msg = Message("Hello again from HeartDiseasePrediction", sender = "ahmedisamin1433@outlook.com", recipients = [em])
+				msg = Message("Hello again from HeartDiseasePrediction", sender = "youremail@outlook.com", recipients = [em])
 				msg.body = "Greetings from HeartDiseasePredictor! Seems like you forgot your password. Your new password is " + str(pw1)
 				mail.send(msg)
 				try:
