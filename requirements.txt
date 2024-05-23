@@ -79,7 +79,7 @@ packaging==23.0
 pandas==2.0.3
 pathspec==0.12.1
 pefile==2022.5.30
-pickle==4.0
+pickle==1.21.6
 pillow==10.3.0
 platformdirs==4.2.0
 Polygon3==3.0.9.1
