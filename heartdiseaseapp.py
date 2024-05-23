@@ -5,7 +5,6 @@ from random import randrange
 import pickle
 
 
-
 app = Flask(__name__)
 app.secret_key = "yoursecretkey"
 mail_settings = {
