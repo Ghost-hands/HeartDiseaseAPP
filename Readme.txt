@@ -1,7 +1,4 @@
 Deployed Render application link:  https://heartdiseaseapp.onrender.com/signup
-Dummy Account to log in with (to skip registering.etc.):
-user:ahmeedthegoat
-password:556200
 ............................................................................................................................
 To test out the features without dealing with the delays of the free render instance, Run heartdiseaseapp.py in your local python IDE (VS code, Pycharm. etc.) and Press on the url provided in the terminal to be redirected to a development server.
 ............................................................................................................................
