@@ -57,6 +57,7 @@ def check():
 		with open("heartprediction.pickle", "rb") as f:
 			model = pickle.load(f)
 		res = model.predict(d)
+		print(res)
 		return render_template("find.html", msg = res, name = session['username'])	
 	else:
 		return render_template("home.html")
