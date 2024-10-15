@@ -54,7 +54,7 @@ def check():
 		fluro = float(request.form["fluro"])
 		Th = float(request.form["Th"])
 		d = [[age, cp, BP, CH, maxhr, STD, fluro, Th]]
-		with open("heartprediction.pickle", "rb") as f:
+		with open("heartprediction2.pickle", "rb") as f:
 			model = pickle.load(f)
 		res = model.predict(d)
 		print(res)
